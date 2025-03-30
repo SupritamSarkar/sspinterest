@@ -268,7 +268,7 @@ router.get("/post/:id", async (req, res) => {
     if (!post) {
       return res.status(404).send("Post not found");
     }
-    res.render("postdetails", { post });
+    res.render("postDetails", { post });
   } catch (error) {
     console.error("Error fetching post details:", error);
     res.status(500).send("Error loading post details");
