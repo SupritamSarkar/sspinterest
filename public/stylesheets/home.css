@@ -1,0 +1,104 @@
+/* 🌟 General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  overflow: auto; /* Prevent horizontal scrolling on smaller screens */
+}
+
+/* 🔹 Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav div a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+nav div a:hover {
+  color: #007bff;
+}
+
+/* ✅ Masonry Layout using CSS Grid */
+.posts-container {
+  padding-top: 5vh;
+  width: 95%;
+  margin: auto;
+  columns: 5;
+  column-gap: 20px;
+  
+}
+
+.posts-container .post-item {
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  border-radius: 15px;
+}
+
+.posts-container .post-item img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+}
+
+/* ✅ Hover Effect for Images */
+img:hover {
+  
+  opacity: .95;
+  box-shadow: 0 0 10px #fff;
+}
+
+
+
+/* ✅ Responsive Design Adjustments */
+@media (max-width: 1427px) {
+	.posts-container {
+    columns: 5;
+    width: calc(100% - 40px);
+	}
+}
+
+@media (max-width: 1200px) {
+	.posts-container {
+    columns: 4;
+	}
+}
+
+@media (max-width: 1000px) {
+	.posts-container {
+	columns: 3;
+	}
+	
+}
+
+@media (max-width: 786px) {
+	.posts-container {
+	columns: 2;
+	}
+}
+
+@media (max-width: 480px) {
+	.posts-container {
+  columns: 1;
+	}
+}

@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.post-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.post-image {
+  width: 80%; /* Double the previous size */
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.post-info {
+  width: 40%;
+  text-align: left;
+}
+
+.comments-section {
+  width: 100%; /* Make it stretch full width */
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+
+
+.post-actions {
+  display: flex;
+  justify-content: flex-start; /* Space out buttons */
+  align-items: center;
+  padding: 3px;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+.like-btn, .comment-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.comment-box {
+  display: none;
+  margin-top: 5px;
+  
+}
+
+.comment-box input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-box button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.comments-list {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+
+/* ✅ Style the Delete Button */
+.delete-btn {
+  background: red;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+/* ✅ Ensure Like & Comment buttons have a similar size */
+.like-btn, .comment-btn {
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  
+}
+
+.like-btn:hover, .comment-btn:hover {
+  background: gray;
+}
