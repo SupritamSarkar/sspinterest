@@ -120,7 +120,8 @@ router.get("/logout", (req, res, next) => {
       }
     res.clearCookie("connect.sid"); // Clear the session cookie
     res.redirect("/");
-  });
+        });
+  })
 });
 
 // 📸 ✅ Upload & Save Profile Picture to Database
